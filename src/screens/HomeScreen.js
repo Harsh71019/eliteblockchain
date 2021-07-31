@@ -64,30 +64,180 @@ const HomeScreen = () => {
             </div>
           </div>
 
-          <hr className="hr-top-nav" />
+          <hr className="hr-top-nav mb-5" />
           <NavBar />
-          <div className="row">
-            <div className="col-6">
-              <p>
-                <i class="fab fa-bitcoin"></i>Jumpstart your portfolio &rarr;
+          <div className="row mt-5">
+            <div className="col-lg-6 col-md-6 col-xs-12">
+              <p className="heading-top-text1">
+                <i className="fab fa-bitcoin marginright10 bitcoin-icon"></i>
+                Jumpstart your portfolio &rarr;
               </p>
-              <p>Launching India's Biggest Crypto Platform</p>
-              <p>
+              <p className="heading-top-text2">
+                Launching The India's Most Powerful Crypto Platform
+              </p>
+              <p className="heading-top-text3">
                 We understand the importance of liquidity and have partnered
                 with global liquidity providers and market makers.
               </p>
-              <div className="email-search-top">
-                <form class="search-wrapper cf">
+
+              {/* Start of Form */}
+              <div className="email-search-top ">
+                <form className="search-wrapper cf d-flex align-items-center d-flex justify-content-evenly">
                   <input
                     type="text"
                     placeholder="Enter your email..."
                     required
                   />
-                  <button type="submit">Getting Started ></button>
+                  <button className="getting-started-landing" type="submit">
+                    Getting Started >
+                  </button>
                 </form>
               </div>
+              {/* End of Form */}
             </div>
-            <div className="col-6">2</div>
+            <div className="col-lg-6 col-md-6 col-xs-12 second-div-toplanding d-flex justify-content-center">
+              <div className="card-main-top-div shadow-lg rounded">
+                <div class="card card-main-top-home">
+                  <div class="card-body">
+                    <a className="nav-item dropdown text-decoration-none">
+                      <a
+                        className="nav-link dropdown-toggle p-0"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Products
+                      </a>
+                      <div
+                        className="dropdown-menu"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <a className="dropdown-item" href="#">
+                          Action
+                        </a>
+                        <a className="dropdown-item" href="#">
+                          Another action
+                        </a>
+                        <div className="dropdown-divider"></div>
+                        <a className="dropdown-item" href="#">
+                          Something else here
+                        </a>
+                      </div>
+
+                      {/* end of dropdown */}
+                      {/* Start of 2 Paragraph Tags */}
+                      <p className="d-flex justify-content-between align-items-center">
+                        <span>Price</span> <span>24HR CHANGES</span>
+                      </p>
+                      <p className="d-flex justify-content-between align-items-center">
+                        <span>₹35,580</span> <span>+ 1.25</span>
+                      </p>
+                      {/* End of 2 Paragraph Tags */}
+                      {/* Start of Tabs */}
+                      <div class="row">
+                        <div class="col-xs-12 ">
+                          <nav>
+                            <div
+                              class="nav nav-tabs nav-fill"
+                              id="nav-tab"
+                              role="tablist"
+                            >
+                              <a
+                                class="nav-item nav-link active"
+                                id="nav-home-tab"
+                                data-toggle="tab"
+                                href="#nav-home"
+                                role="tab"
+                                aria-controls="nav-home"
+                                aria-selected="true"
+                              >
+                                Buy
+                              </a>
+                              <a
+                                class="nav-item nav-link"
+                                id="nav-profile-tab"
+                                data-toggle="tab"
+                                href="#nav-profile"
+                                role="tab"
+                                aria-controls="nav-profile"
+                                aria-selected="false"
+                              >
+                                Sell
+                              </a>
+                              <a
+                                class="nav-item nav-link"
+                                id="nav-contact-tab"
+                                data-toggle="tab"
+                                href="#nav-contact"
+                                role="tab"
+                                aria-controls="nav-contact"
+                                aria-selected="false"
+                              >
+                                Convert
+                              </a>
+                            </div>
+                          </nav>
+                          <div
+                            class="tab-content py-3 px-3 px-sm-0"
+                            id="nav-tabContent"
+                          >
+                            <div
+                              class="tab-pane fade show active"
+                              id="nav-home"
+                              role="tabpanel"
+                              aria-labelledby="nav-home-tab"
+                            >
+                              Buy
+                            </div>
+                            <div
+                              class="tab-pane fade"
+                              id="nav-profile"
+                              role="tabpanel"
+                              aria-labelledby="nav-profile-tab"
+                            >
+                              Sell
+                            </div>
+                            <div
+                              class="tab-pane fade"
+                              id="nav-contact"
+                              role="tabpanel"
+                              aria-labelledby="nav-contact-tab"
+                            >
+                              Convert
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {/* End of Tabs */}
+                      {/* Start of 2 inputs */}
+                      <div className="row p-3">
+                        <input
+                          className="home-top-card-input mt-3"
+                          placeholder="RUPEES"
+                        />
+                      </div>
+                      <div className="row p-3">
+                        <input
+                          className="home-top-card-input mt-3"
+                          placeholder="ABC"
+                        />
+                      </div>
+                      {/* End of 2  inputs */}
+                      {/* Start of Button */}
+                      <div className="row d-flex justify-content-center">
+                        <button className="blue-button-homepage-top">
+                          BUY NOW
+                        </button>
+                      </div>
+                      {/* End of Button */}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
