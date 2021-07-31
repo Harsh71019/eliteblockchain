@@ -269,14 +269,10 @@ select {
 
 .card-main-top-div {
   width: 390px;
-  position: absolute !important;
-  z-index: 99 !important;
   /* Allows z-index to take affect */
 }
 .card-main-top-home {
   width: 390px;
-  position: relative; /* Allows z-index to take affect */
-  z-index: 2;
 }
 .blue-button-homepage-top {
   border: none;
@@ -288,26 +284,136 @@ select {
   margin-top: 20px;
   width: 70%;
 }
+/* Section Second */
+.second-section-image-div {
+  background-image: url(./images/bgsecond.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.second-image-front {
+  width: 100%;
+  height: 100%;
+}
+
+.second-section-button {
+  background: #2783f3;
+  border: none;
+  color: #fff;
+  border-radius: 7px;
+  padding: 10px 30px;
+}
+
+.second-section-heading {
+  font-size: 50px;
+}
+.second-section-para {
+  font-size: 16px;
+  font-weight: 300;
+}
+/*End Section Second */
+
+/* Start of Footer */
+.footer {
+  background: #151e50;
+  margin-top: 100px;
+  color: #fff;
+}
+/*  SECTIONS  */
+.section-footer {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col-footer {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+.col-footer:first-child {
+  margin-left: 0;
+}
+
+/*  GROUPING  */
+.group-footer-footer:before,
+.group-footer-footer:after {
+  content: "";
+  display: table;
+}
+.group-footer-footer:after {
+  clear: both;
+}
+.group-footer-footer {
+  zoom: 1; /* For IE 6/7 */
+}
+/*  GRID OF FIVE  */
+.span_5_of_5 {
+  width: 100%;
+}
+.span_4_of_5 {
+  width: 79.68%;
+}
+.span_3_of_5 {
+  width: 59.36%;
+}
+.span_2_of_5 {
+  width: 39.04%;
+}
+.span_1_of_5-footer {
+  width: 18.72%;
+}
+.header-text-col5-footer {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.secondary-text-col5-footer {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col-footer {
+    margin: 1% 0 1% 0%;
+  }
+  .span_1_of_5-footer,
+  .span_2_of_5,
+  .span_3_of_5,
+  .span_4_of_5,
+  .span_5_of_5 {
+    width: 100%;
+  }
+}
+
+/* End of Footer */
 
 @media only screen and (max-width: 600px) {
   .home-image-top {
     height: 100%;
+    width: 100%;
     background-image: url(./images/primaryColorImage.png);
     background-size: contain;
     background-position: bottom;
     clip-path: none;
   }
+
+  .search-wrapper button {
+    width: 60%;
+  }
+
   .second-div-toplanding {
     margin-top: 30px;
   }
 
   .card-main-top-div {
     width: 100%;
-    position: relative; /* Allows z-index to take affect */
+    margin-bottom: 10px;
   }
   .card-main-top-home {
     width: 100%;
-    position: relative; /* Allows z-index to take affect */
-    z-index: 2;
+    margin-bottom: 10px;
   }
 }
