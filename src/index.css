@@ -313,12 +313,87 @@ select {
 }
 /*End Section Second */
 
+/* Start of getting started Section */
+.getting-started-image-top {
+  height: 60vh;
+  background-image: url(./images/colorimage2.png);
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+  clip-path: polygon(0 0, 100% 10vh, 100% 100vh, 0 100%);
+}
+
+.image-getting-started {
+  width: 100%;
+}
+
+.getting-started-heading {
+  color: #fff;
+  font-size: 45px;
+}
+.getting-started-para {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.label-getting-started-checkbox {
+  color: #fff;
+}
+/* End of getting started Section */
+
+/* Start of Horizontal Card Scroll */
+.nav-items-card-scroll {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.scroll-container-forcard {
+  display: inline-block;
+  padding: 14px;
+}
+.card-scroll-cards {
+  width: 300px;
+}
+
+.menu-container-card-scroll {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-scroll-button-right {
+  color: blue;
+  border: none;
+  background-color: white;
+  text-align: center;
+  padding: 14px;
+  /* text-decoration: none; */
+  cursor: pointer;
+}
+.card-scroll-button-left {
+  color: blue;
+  border: none;
+  background-color: white;
+  text-align: center;
+  padding: 14px;
+  /* text-decoration: none; */
+  cursor: pointer;
+}
+/* End of Horizontal Card Scroll */
+
+/* Start of news Card component */
+.news-card-section {
+  background: linear-gradient(270.52deg, #172259 -0.91%, #3549c4 103.83%);
+}
+
+/* End of news Card component */
+
 /* Start of Footer */
 .footer {
   background: #151e50;
-  margin-top: 100px;
   color: #fff;
 }
+
 /*  SECTIONS  */
 .section-footer {
   clear: both;
@@ -415,5 +490,18 @@ select {
   .card-main-top-home {
     width: 100%;
     margin-bottom: 10px;
+  }
+
+  .getting-started-image-top {
+    height: 100%;
+    background-image: url(./images/colorimage2.png);
+    background-size: cover;
+    background-position: top;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .image-getting-started {
+    width: 100%;
   }
 }

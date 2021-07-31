@@ -3,6 +3,9 @@ import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SecondTopImage from "../images/bgsecondtop.png";
 import SecondBackImage from "../images/bgsecond.png";
+import CardHorizontalScroll from "../components/CardHorizontalScroll";
+import GettingStartedSection from "../components/GettingStartedSection";
+import NewsCard from "../components/NewsCard";
 
 const HomeScreen = () => {
   return (
@@ -279,6 +282,11 @@ const HomeScreen = () => {
           </div>
         </div>
       </section>
+      <NewsCard />
+      <section className="container">
+        <CardHorizontalScroll />
+      </section>
+      <GettingStartedSection />
     </>
   );
 };

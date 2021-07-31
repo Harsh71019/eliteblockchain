@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <section className="footer mt-5">
+    <section className="footer">
       <div className="container">
         <p className="logo-text-footer">
           <i className="fab fa-bitcoin marginright10 bitcoin-icon"></i>
